@@ -110,7 +110,7 @@ const promptEng=()=>{
 
 const promptInt=()=>{
     return inquirer.prompt(internQs).then((answers)=>{
-        engArray.push(new Intern(answers.intName,answers.intId,answers.intEmail,answers.intSchool))
+        intArray.push(new Intern(answers.intName,answers.intId,answers.intEmail,answers.intSchool))
         return promptMenu()
     }).catch(err => {
         console.log(err);
@@ -134,24 +134,6 @@ const promptMenu=()=>{
     }).catch(err => {
         console.log(err);
     });
-}
-
-function writetoFile(data){
-    return new Promise((resolve, reject)=>{
-        fs.writeFile("./dist/teamProfile.html",data,err=>{
-            if(err){
-                reject(err)
-                return
-            }
-            resolve({
-                ok: true,
-                message:"File created! Check the dist folder for the teamProfile.html file!"
-            })
-            if(resolve.ok){
-                console.log(resolve.message)
-            }
-        })
-    })
 }
 
 const genHTML=()=>{
@@ -228,6 +210,24 @@ const intCard=intern=>{
         interns+=intern
     })
     return interns
+}
+
+function writetoFile(data){
+    return new Promise((resolve, reject)=>{
+        fs.writeFile("./dist/teamProfile.html",data,err=>{
+            if(err){
+                reject(err)
+                return
+            }
+            resolve({
+                ok: true,
+                message:"File created! Check the dist folder for the teamProfile.html file!"
+            })
+            if(resolve.ok){
+                console.log(resolve.message)
+            }
+        })
+    })
 }
 
 const init=()=>{
