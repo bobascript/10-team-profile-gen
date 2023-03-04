@@ -1,0 +1,47 @@
+*{
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #B5DFCA;
+}
+
+header{
+    background-color:#A1CDA8 ;
+    color: #627264;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    padding: 30px;
+    border: 5px solid #AD9BAA;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    flex-wrap: wrap;
+    border: 5px solid #AD9BAA;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    background-color: #627264;
+    color: #A1CDA8;
+}
+
+.empDetails{
+    margin: 8px;
+    font-size: 15px;
+}
+
+.name{
+    font-size: 30px;
+    text-align: center;
+    margin: 8px;
+}
+
+.position{
+    font-size: 20px;
+    text-align: center;
+    margin-top:2px;
+    border-bottom: 3px solid #AD9BAA;
+}
