@@ -1,6 +1,5 @@
 *{
     font-family: 'Gemunu Libre', sans-serif;
-    background-color: #B5DFCA;
 }
 
 header{
@@ -10,7 +9,7 @@ header{
     font-size: 45px;
     font-weight: 800;
     padding: 30px;
-    border: 5px solid #AD9BAA;
+    border: 5px solid black;
 }
 
 section {
@@ -20,7 +19,8 @@ section {
 
 .card{
     flex-wrap: wrap;
-    border: 5px solid #AD9BAA;
+    border: 5px solid black;
+    border-radius: 20px;
     margin: 15px;
     width: 200px;
     height: 200px;
@@ -30,7 +30,8 @@ section {
 
 .empDetails{
     margin: 8px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .name{
@@ -43,5 +44,5 @@ section {
     font-size: 20px;
     text-align: center;
     margin-top:2px;
-    border-bottom: 3px solid #AD9BAA;
+    border-bottom: 3px solid black;
 }
